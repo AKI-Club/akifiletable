@@ -5,7 +5,7 @@
 Running `akifiletable` without any arguments will print the program usage.
 
 ```bash
-akifiletable -l LIST_FILE [-o OUTPUT_FILETABLE] [-i OUTPUT_INDEX] [-h OUTPUT_HEADER] [-v]
+akifiletable -l LIST_FILE [-o OUTPUT_FILETABLE] [-i OUTPUT_INDEX] [-h OUTPUT_HEADER] [-v] [-d]
 ```
 
 ### Required arguments
@@ -15,7 +15,8 @@ akifiletable -l LIST_FILE [-o OUTPUT_FILETABLE] [-i OUTPUT_INDEX] [-h OUTPUT_HEA
     -o OUTPUT_FILETABLE    Filename for filetable data. Defaults to `filetable.bin` if omitted.
     -i OUTPUT_INDEX        Filename for filetable index. Defaults to `filetable.idx` if omitted.
 	-h OUTPUT_HEADER       Filename for filetable symbol header. Defaults to `filetable.h` if omitted.
-	-v                     Verbose mode (optional)
+	-v                     Verbose mode; output information about each file entry. Will likely inflate build times.
+	-d                     Write filetable symbol header file only.
 
 ## List File JSON Format
 The list file is a JSON file consisting of a single array `[]` of entries.
