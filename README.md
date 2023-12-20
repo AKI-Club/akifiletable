@@ -5,7 +5,7 @@
 Running `akifiletable` without any arguments will print the program usage.
 
 ```bash
-akifiletable -l LIST_FILE [-o OUTPUT_FILETABLE] [-i OUTPUT_INDEX] [-h OUTPUT_HEADER] [-v] [-d]
+akifiletable -l LIST_FILE [-o OUTPUT_FILETABLE] [-i OUTPUT_INDEX] [-h OUTPUT_HEADER] [-a OUTPUT_INCLUDE] [-v] [-d]
 ```
 
 ### Required arguments
@@ -15,6 +15,7 @@ akifiletable -l LIST_FILE [-o OUTPUT_FILETABLE] [-i OUTPUT_INDEX] [-h OUTPUT_HEA
     -o OUTPUT_FILETABLE    Filename for filetable data. Defaults to `filetable.bin` if omitted.
     -i OUTPUT_INDEX        Filename for filetable index. Defaults to `filetable.idx` if omitted.
 	-h OUTPUT_HEADER       Filename for filetable symbol header. Defaults to `filetable.h` if omitted.
+	-a OUTPUT_INCLUDE      Filename for filetable symbol assembly include file. Defaults to `filetable.inc` if omitted.
 	-v                     Verbose mode; output information about each file entry. Will likely inflate build times.
 	-d                     Write filetable symbol header file only.
 
